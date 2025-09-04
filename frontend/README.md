@@ -31,7 +31,42 @@
 ## Pages Structure
 
 - `pages/index.vue`: Main page and login access.
-- `pages/login.vue`: Social login button (GitHub).
+
+## SSR Mode (Recommended)
+
+This Nuxt application is configured as SSR (Server-Side Rendering) by default, because it uses dynamic routes and authentication with Strapi, which requires server-side rendering to handle sessions and protected data.
+
+You use authentication, dynamic routes (`users/[id].vue`), and depend on protected data—SSR is the recommended mode and the default for Nuxt.
+
+---
+
+## Deployment (Recommended: Vercel for SSR)
+
+For SSR (Server-Side Rendering), which is ideal for authentication, protected routes, and SEO, deploy your Nuxt app on [Vercel](https://vercel.com/):
+
+**Vercel (SSR):**
+
+- Connect your GitHub repo to Vercel and import the project.
+- Set the build command to `npm run build` and output directory to `.output/public`.
+- Vercel will auto-detect SSR and deploy as a serverless app.
+
+**Backend URL configuration:**
+
+- Set the Strapi backend URL in your Nuxt config or as an environment variable (e.g. `STRAPI_URL`).
+- Example: In `nuxt.config.ts`:
+  ```ts
+  runtimeConfig: {
+    public: {
+      strapi: {
+        url: process.env.STRAPI_URL ||
+          "https://your-strapi-backend.onrender.com";
+      }
+    }
+  }
+  ```
+
+**Note:** Deploy your Strapi backend separately (e.g. Render, Heroku, Railway, Azure).
+
 - `pages/connect/[provider].vue`: Handles OAuth callback and saves user/JWT.
 - `pages/users/[id].vue`: Shows authenticated user data.
 
