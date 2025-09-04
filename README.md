@@ -1,5 +1,9 @@
 # strapi-nuxt-auth
 
+<div align="center">
+  <img src="./Preview.PNG" alt="Preview del login" />
+</div>
+
 <p align="center">
   <a href="https://strapi.io/" target="_blank"><img src="https://img.shields.io/badge/Strapi-v5-blue?logo=strapi" alt="Strapi"></a>
   <a href="https://nuxt.com/" target="_blank"><img src="https://img.shields.io/badge/Nuxt.js-v3%2F4-green?logo=nuxtdotjs" alt="Nuxt.js"></a>

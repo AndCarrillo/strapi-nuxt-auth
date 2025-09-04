@@ -1,0 +1,128 @@
+body {
+  /* Fondo suave con leve contraste */
+  background: linear-gradient(135deg, #f4f6fb 0%, #293766 100%);
+  color: #222;
+  font-family: "Inter", "Roboto", "Open Sans", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background: #fff;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.02);
+}
+
+nav a {
+  color: #2563eb;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #1e40af;
+}
+
+button {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #1e40af;
+}
+
+input,
+select,
+textarea {
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.error {
+  color: #ef4444;
+  font-size: 0.95rem;
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 700;
+  color: #222;
+  text-align: center;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  letter-spacing: 0.01em;
+}
+
+.center-screen {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.muted {
+  color: #6b7280;
+}
+
+/* Botón principal grueso y centrado */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.9rem 1.6rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  border-radius: 9999px;
+  text-decoration: none;
+  border: 1px solid transparent;
+  background: #111827; /* gris oscuro tipo GitHub */
+  color: #fff;
+  box-shadow: 0 6px 14px rgba(17, 24, 39, 0.15);
+  transition: background 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+  background: #0f172a;
+  transform: translateY(-1px);
+  box-shadow: 0 10px 22px rgba(17, 24, 39, 0.2);
+}
+
+.btn:active {
+  transform: translateY(0);
+}

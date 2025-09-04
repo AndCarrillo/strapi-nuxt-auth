@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ["@nuxtjs/strapi"],
+  css: ["@/assets/styles.css"],
   runtimeConfig: {
     public: {
       axios: {
